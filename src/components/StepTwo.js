@@ -3,7 +3,7 @@ import React from "react";
 function StepTwo(props) {
   return (
     <div className="steptwo">
-      <h1>Results</h1>
+      <h1>Récapitulatif</h1>
       <div className="results">
         <span>Name:{props.name}</span>
         <span>Email:{props.email}</span>

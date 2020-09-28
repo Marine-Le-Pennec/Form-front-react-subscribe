@@ -23,6 +23,10 @@ function App() {
             {isRegistered === true ? (
               <StepTwo
                 name={name}
+                setName={setName}
+                setEmail={setEmail}
+                setPassword={setPassword}
+                setPasswordCheck={setPasswordCheck}
                 email={email}
                 password={password}
                 setIsRegistered={setIsRegistered}

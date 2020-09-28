@@ -24,6 +24,19 @@ const Form = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (!props.name || !props.email || !props.password) {
+      alert("Veuillez compléter le formulaire");
+    } else if (props.password !== props.check) {
+      alert("Vos deux mots de passe ne sont pas identiques");
+    } else if (props.password === props.check) {
+      props.setIsRegistered(true);
+      props.setName("");
+      props.setEmail("");
+      props.setPassword("");
+      props.setPasswordCheck("");
+    } else {
+      alert("Veuillez remplir tous les champs");
+    }
   };
 
   return (
@@ -35,6 +48,7 @@ const Form = (props) => {
             placeholder="Entrez votre Nom/Prénom"
             type="text"
             name="userName"
+            required
             value={props.name}
             onChange={handleNameChange}
           ></input>
@@ -46,6 +60,7 @@ const Form = (props) => {
             placeholder="Entrez votre email"
             name="userEmail"
             type="text"
+            required
             value={props.email}
             onChange={handleMailChange}
           ></input>
@@ -56,6 +71,7 @@ const Form = (props) => {
             placeholder="Définissez votre mot de passe"
             type="password"
             name="userPassword"
+            required
             value={props.password}
             onChange={handlePasswordChange}
           ></input>{" "}
@@ -67,6 +83,7 @@ const Form = (props) => {
             placeholder="Confirmez votre mot de passe"
             type="password"
             name="userPasswordCheck"
+            required
             value={props.check}
             onChange={handlePasswordCheck}
           ></input>
@@ -76,15 +93,7 @@ const Form = (props) => {
           className="submitButton"
           type="submit"
           value="Inscription"
-          onClick={() => {
-            if (props.password !== props.check) {
-              alert("Vos deux mots de passe ne sont pas identiques");
-            } else if (props.password === props.check) {
-              props.setIsRegistered(true);
-            } else {
-              alert("Veuillez remplir tous les champs");
-            }
-          }}
+          onClick={handleSubmit}
         />
       </form>
     </div>

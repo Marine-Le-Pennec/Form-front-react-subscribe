@@ -15,7 +15,7 @@ function App() {
   const [isRegistered, setIsRegistered] = useState(false);
 
   return (
-    <div>
+    <div className="App">
       <Header />
       <main>
         <div className="container">

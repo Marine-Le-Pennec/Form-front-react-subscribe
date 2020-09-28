@@ -11,13 +11,21 @@ function Footer() {
       </b>{" "}
       &nbsp;at&nbsp;{" "}
       <b>
-        <a target="_blank" href="https://www.lereacteur.io/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.lereacteur.io/"
+        >
           Le Réacteur
         </a>
       </b>
       &nbsp; by&nbsp;{" "}
       <b>
-        <a target="_blank" href="https://github.com/Marine-Le-Pennec">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Marine-Le-Pennec"
+        >
           Marine
         </a>
       </b>

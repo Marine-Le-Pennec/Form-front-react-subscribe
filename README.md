@@ -6,7 +6,7 @@ A simple project  made with React during the bootcamp ![enter image description 
 ### This app is using a JSON file for the data
 
 
-![enter image description here](https://res.cloudinary.com/dt3dcdlk6/image/upload/v1601295462/Capture_d_e%CC%81cran_2020-09-28_a%CC%80_14.17.37_q7ig0v.png)
+![enter image description here](https://media.giphy.com/media/B3uI4JDKzkgqYy3CDU/giphy.gif)
 
 
 

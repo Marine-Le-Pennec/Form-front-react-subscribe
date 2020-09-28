@@ -1,6 +1,9 @@
-# Simple front form with React
-![illustation](https://res.cloudinary.com/dt3dcdlk6/image/upload/v1601290861/web-screen_ytgmt1.png)
-Format: ![Alt Text](url)
+### Form made with React
+
+A simple project  made with React during the bootcamp ![enter image description here](https://res.cloudinary.com/dt3dcdlk6/image/upload/v1601290861/web-screen_ytgmt1.png)
+
+You can fill the form and see a recap when you submit it.
+
 
 
 
